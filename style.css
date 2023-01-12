@@ -39,6 +39,7 @@ nav a {
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
 }
 
 nav a:hover {
@@ -55,10 +56,12 @@ main {
   background-color: #ffffff;
 }
 
-.detalhe {
+h1::after {
+  content: " ";
+  display: inline-block;
   width: 60px;
   height: 4px;
-  background-color: #ee2211;
+  background-color: red;
   position: absolute;
   top: 30px;
   right: -30px;
@@ -93,7 +96,7 @@ h1 {
 }
 
 .botao:hover {
-  background-color: #851107;
+  background-color: #900;
 }
 
 .conteudo2 {
@@ -114,13 +117,13 @@ h2 {
   text-align: right;
 }
 
-.vantagens div:nth-child(odd) {
-  background-color: #f7f7f7;
-}
-
 .vantagens {
   background-color: #ffffff;
   padding: 50px;
+}
+
+.vantagens div:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 
 .vantagens p {
@@ -141,12 +144,20 @@ h3 {
   gap: 10px;
 }
 
+.vantagens-item:hover {
+  border-left: solid 3px #e21;
+}
+
 .vantagens-item2 {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 20px;
+
   gap: 10px;
+}
+
+.vantagens-item2:hover {
+  border-left: solid 3px #e21;
 }
 
 .vantagens-item3 {
@@ -154,6 +165,10 @@ h3 {
   grid-template-columns: auto 1fr;
   gap: 10px;
   padding: 20px;
+}
+
+.vantagens-item3:hover {
+  border-left: solid 3px #e21;
 }
 
 footer {
